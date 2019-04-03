@@ -8,23 +8,28 @@ module.exports={
         path: path.join(__dirname,'../public/js'),
         filename:'index.js'
     },
-    /*module:{
+    resolve:{
+       alias:{
+           less: path.resolve(__dirname,'/less')
+       }
+    },
+    module:{
         rules:[
             {
                 test:/\.less$/,
-                use:['style.loader','css-loader','less.loader']
+                use:[
+                    'style-loader',
+                    'css-loader',
+                    'less-loader'
+                ]
+
             }
         ],
-        resolve:{
-            alias:{
-                
-            }
-        },
-        plugins:[
-            new webpack.ProvidePlugin({
-                $:'jquery'
-            })
+    },
+    plugins:[
+        new webpack.ProvidePlugin({
+            $: 'jquery'
+          })
         ]
-    }*/
 
 }
