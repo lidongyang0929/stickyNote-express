@@ -1,4 +1,4 @@
-//require('less/toast.less')
+require('less/toast.less')
 
 class Toast{
     constructor(msg,time){

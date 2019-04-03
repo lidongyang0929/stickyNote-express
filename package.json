@@ -15,11 +15,11 @@
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "jquery": "^3.3.1",
+    "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "mint-ui": "^2.2.13",
     "morgan": "~1.9.0",
     "onchange": "^5.2.0",
-    "postcss-loader": "^3.0.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.6"
   },
